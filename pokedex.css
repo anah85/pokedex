@@ -70,16 +70,13 @@ h1 {
     }
 
 .card {
-    display: flex;
-    border-radius: 15%;
-    list-style: none;
-    padding: 40px;
+    padding-inline-start: 0;
+    display: grid;
+    border-radius: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
     font-size: 25px;
     background-color: #f4f4f4;
-    color: #222;
-    text-align: center;
-    flex-direction: column;
-    align-items: flex-start;
     }
     .card-title {
     text-transform: uppercase;
@@ -94,12 +91,6 @@ h1 {
     }
     .card-image {
     height: 180px;
-    }
-    #pokedex {
-    padding-inline-start: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 20px;
     }
     .card:hover {
     animation: bounce 0.5s linear;
@@ -129,17 +120,14 @@ h1 {
  
 }
 .tipo {
-    padding: .25rem .5rem;
-    border-radius: 100vmax;
+    padding:2px;
 }
 .normal {
     background-color: var(--type-normal);
-  
 }
 
 .fire {
-    background-color: var(--type-fire);
-   
+    background-color: var(--type-fire);  
 }
 
 .water {
@@ -157,7 +145,6 @@ h1 {
 
 .ice {
     background-color: var(--type-ice);
-    color: var(--clr-black);
 }
 
 .fighting {
@@ -172,12 +159,10 @@ h1 {
 
 .ground {
     background-color: var(--type-ground);
-    color: var(--clr-black);
 }
 
 .flying {
-    background-color: var(--type-flying);
-    color: var(--clr-black);
+    background-color: var(--type-flying); 
 }
 
 .psychic {
@@ -192,7 +177,6 @@ h1 {
 
 .rock {
     background-color: var(--type-rock);
-    color: var(--clr-black);
 }
 
 .ghost {
@@ -212,10 +196,8 @@ h1 {
 
 .steel {
     background-color: var(--type-steel);
-
 }
 
 .fairy {
     background-color: var(--type-fairy);
-    color: var(--clr-black);
 } 
